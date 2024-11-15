@@ -23,6 +23,9 @@ This is a simple and responsive company profile website built with HTML, Tailwin
 - HTML5
 - Tailwind
 
+## Domain
+https://bergantea.shop/
+
 ## Sections Overview
 
 ### 1. Navbar

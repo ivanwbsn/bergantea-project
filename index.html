@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Bergantea" />
+    <meta name="keywords" content="Bergantea" />
+    <meta name="author" content="Bergantea" />
+    <title>Bergantea</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Funnel+Display:wght@300..800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <!-- <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              text: "#030508",
+              background: "#f7f8fc",
+              primary: "#516bb8",
+              secondary: "#c49ed7",
+              accent: "#ba76c7",
+            },
+          },
+        },
+      };
+    </script> -->
+  </head>
+
+  <body class="bg-[#d3d3d3]">
+    <header class="bg-[#d3d3d3] sticky top-0 w-full">
+      <nav class="flex justify-between items-center w-[92%] mx-auto py-4">
+        <div>
+          <h1 class="font-sans font-black text-4xl text-red-500">BERGANTEA</h1>
+        </div>
+        <div
+          class="nav-links duration-700 md:static absolute bg-[#d3d3d3] md:min-h-fit min-h-16 left-0 -top-96 md:w-auto w-full flex items-center px-4"
+        >
+          <ul class="flex md:flex-row flex-col md:items-center md:gap-10 gap-8">
+            <li>
+              <a
+                class="hover:text-red-500 transition-color duration-200"
+                href=""
+                >Home</a
+              >
+            </li>
+            <li>
+              <a
+                class="hover:text-red-500 transition-color duration-200"
+                href=""
+                >Our Collection</a
+              >
+            </li>
+            <li>
+              <a
+                class="hover:text-red-500 transition-color duration-200"
+                href=""
+                >About Us</a
+              >
+            </li>
+            <li>
+              <a
+                class="hover:text-red-500 transition-color duration-200"
+                href=""
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="flex items-center gap-">
+          <button class="bg-red-400 px-5 py-2 rounded-full">sign in</button>
+          <ion-icon
+            onclick="onToggleMenu(this)"
+            name="menu-outline"
+            class="text-4xl cursor-pointer md:hidden"
+          >
+          </ion-icon>
+        </div>
+      </nav>
+    </header>
+
+    <main class="mx-auto py-4">
+      <section class="bg-cover bg-no-repeat h-full p-2 mb-40">
+        <div
+          class="container mx-auto grid grid-cols-1 md:grid-cols-3 items-center"
+        >
+          <div class="flex justify-center md:order-2 md:col-span-2">
+            <img
+              src="assets/people/gita-transparent-2.png"
+              alt="Gita JKT48"
+              class="h-full object-cover"
+            />
+          </div>
+          <div class="mx-auto text-center md:text-right text-red-500">
+            <p class="font-light text-3xl md:text-5xl">sudah</p>
+            <p class="font-light text-3xl md:text-5xl">saatnya untuk</p>
+            <p><span class="font-bold text-5xl md:text-8xl">#BERGANTI</span></p>
+          </div>
+        </div>
+      </section>
+
+      <section class="container h-full mx-auto mb-40 overflow-hidden">
+        <h2 class="text-3xl font-light mb-8 text-center">Our Collection</h2>
+
+        <div
+          class="grid grid-cols-1 rounded overflow-hidden md:grid-cols-2 text-center md:text-left"
+        >
+          <div
+            class="md:hover:scale-105 flex flex-col md:flex-row items-center bg-gray-300 pb-5"
+          >
+            <img
+              class="container rounded-full object-cover w-52 m-6"
+              src="assets/pouch/tea-pouch.jpg"
+              alt="black tea"
+            />
+            <div class="flex-col">
+              <h3>Black Tea 250gr</h3>
+              <h4>Rp. 54.999</h4>
+            </div>
+          </div>
+
+          <div
+            class="md:hover:scale-105 flex flex-col md:flex-row items-center bg-green-100 pb-5"
+          >
+            <img
+              class="container rounded-full object-cover w-52 m-6"
+              src="assets/pouch/tea-pouch.jpg"
+              alt="black tea"
+            />
+            <div class="flex-col">
+              <h3>Green Tea 250gr</h3>
+              <h4>Rp. 74.999</h4>
+            </div>
+          </div>
+
+          <div
+            class="md:hover:scale-105 flex flex-col md:flex-row items-center bg-sky-200 pb-5"
+          >
+            <img
+              class="container rounded-full object-cover w-52 m-6"
+              src="assets/pouch/tea-pouch.jpg"
+              alt="black tea"
+            />
+            <div class="flex-col">
+              <h3>White Tea 250gr</h3>
+              <h4>Rp. 749.999</h4>
+            </div>
+          </div>
+
+          <div
+            class="md:hover:scale-105 flex flex-col md:flex-row items-center bg-red-200 pb-5"
+          >
+            <img
+              class="container rounded-full object-cover w-52 m-6"
+              src="assets/pouch/tea-pouch.jpg"
+              alt="black tea"
+            />
+            <div class="flex-col">
+              <h3>Premium White Tea 250gr</h3>
+              <h4>Rp. 1.449.999</h4>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="container mx-auto mb-10">
+        <h2 class="text-3xl font-light mb-8 text-center">Gallery</h2>
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-2 md:h-96">
+          <div
+            class="col-span-1 md:col-span-2 md:row-span-2 h-64 md:h-96 rounded-lg shadow-md overflow-hidden"
+          >
+            <img
+              src="assets/product/tea-11.webp"
+              alt="Tea full"
+              class="w-full h-full object-cover"
+            />
+          </div>
+          <div
+            class="col-span-1 md:col-span-2 md:h-auto rounded-lg shadow-md overflow-hidden object"
+          >
+            <img
+              src="assets/product/tea-9.webp"
+              alt="Tea 2"
+              class="w-full h-full object-cover"
+            />
+          </div>
+          <div class="col-span-1 md:h-44 rounded-lg shadow-md overflow-hidden">
+            <img
+              src="assets/product/tea-8.jpeg"
+              alt="Tea 3"
+              class="w-full h-full object-cover"
+            />
+          </div>
+          <div class="col-span-1 md:h-44 rounded-lg shadow-md overflow-hidden">
+            <img
+              src="assets/product/tea-5.jpg"
+              alt="Tea 3"
+              class="w-full h-full object-cover"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section class="container mx-auto">
+        <h2 class="text-3xl font-light mb-8 text-center">About Us</h2>
+        <ul class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <li
+            class="shadow-lg mb-10 rounded overflow-hidden text-center w-auto hover:scale-105"
+          >
+            <img
+              class="w-full mx-auto"
+              src="assets/product/tea-leaf-square.png"
+              alt="tea leaf"
+            />
+            <div class="p-8">
+              <h3 class="text-xl font-bold mb-4">Story behind BERGANTEA</h3>
+              <p class="mb-4">
+                BERGANTEA Industry, inspired by the Indonesian word *berganti*
+                meaning "change," is a premium tea brand dedicated to shifting
+                daily habits from coffee to a healthier alternative. With our
+                tagline, *"Waktunya untuk BERGANTEA"* ("Time for a Change"),
+                we’re bringing the richness of Indonesian tea to the world, one
+                cup at a time.
+              </p>
+              <a class="text-blue-600" href="#">show more</a>
+            </div>
+          </li>
+          <li
+            class="shadow-lg mb-10 rounded overflow-hidden text-center w-auto hover:scale-105"
+          >
+            <img
+              class="w-full mx-auto"
+              src="assets/product/tea-kettle.png"
+              alt="tea leaf"
+            />
+            <div class="p-8">
+              <h3 class="text-xl font-bold mb-4">The mission of BERGANTEA</h3>
+              <p class="mb-4">
+                BERGANTEA Industry, inspired by the Indonesian word *berganti*
+                meaning "change," is a premium tea brand dedicated to shifting
+                daily habits from coffee to a healthier alternative. With our
+                tagline, *"Waktunya untuk BERGANTEA"* ("Time for a Change"),
+                we’re bringing the richness of Indonesian tea to the world, one
+                cup at a time.
+              </p>
+              <a class="text-blue-600" href="#">show more</a>
+            </div>
+          </li>
+        </ul>
+      </section>
+
+      <footer class="bg-inherit text-black px-4 py-12">
+        <div class="mx-auto">
+          <div
+            class="lg:flex lg:space-x-4 justify-center text-center border-t border-gray-700"
+          >
+            <section class="my-6 lg:w-1/2">
+              <h2 class="text-xl font-bold mb-2">Quick Links</h2>
+              <ul>
+                <li>
+                  <a
+                    class="text-black hover:text-red-500 transition-color duration-200"
+                    href="#"
+                    >Home</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="text-black hover:text-red-500 transition-color duration-200"
+                    href="#"
+                    >About</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="text-black hover:text-red-500 transition-color duration-200"
+                    href="#"
+                    >Contact</a
+                  >
+                </li>
+              </ul>
+            </section>
+
+            <section class="mb-4 my-6 lg:w-1/2">
+              <h2 class="text-xl font-bold mb-2">Follow Us</h2>
+              <ul>
+                <li>
+                  <a
+                    class="text-black hover:text-red-500 transition-color duration-200"
+                    href="#"
+                    >Instagram</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="text-black hover:text-red-500 transition-color duration-200"
+                    href="#"
+                    >Twitter</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="text-black hover:text-red-500 transition-color duration-200"
+                    href="#"
+                    >Tiktok</a
+                  >
+                </li>
+              </ul>
+            </section>
+          </div>
+          <section class="py-8 mt-8 text-center border-t border-gray-700">
+            <p>© 2024 BERGANTEA. All rights reserved.</p>
+          </section>
+        </div>
+      </footer>
+    </main>
+  </body>
+
+  <script>
+    const navLinks = document.querySelector(".nav-links");
+    function onToggleMenu(e) {
+      e.name = e.name === "menu" ? "close" : "menu";
+      navLinks.classList.toggle("top-[74.47px]");
+    }
+  </script>
+</html>
